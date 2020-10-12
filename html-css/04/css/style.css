@@ -1,0 +1,47 @@
+h1 {
+    color: #ddff00;
+    font-family: 'Chilanka', cursive;
+    text-align: center;
+    background-image: url("../../03/img/moelleux-chocolat.jpg");
+}
+
+.mon-premier-paragraphe {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.p2 {
+    color: pink;
+}
+
+.important {
+    color: red;
+    font-weight: bold;
+}
+
+.debut-paragraphe {
+    font-size: 30px;
+    color: blue;
+}
+
+.ma-div {
+    text-decoration: underline;
+}
+
+div.ma-div p {
+    color: yellow;
+}
+
+#moelleux-chocolat {
+    float: right;
+    width: 100px;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    background-color: #c2d5f5;
+}
