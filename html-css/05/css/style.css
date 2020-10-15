@@ -1,0 +1,40 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+header h1 {
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+article,
+aside {
+    background-color: bisque;
+    border-radius: 10px;
+    border-left: 5px solid rgb(252, 200, 136);
+}
+
+aside {
+    border-radius: 10px 20px;
+    border-top: 5px solid rgb(252, 200, 136);
+}
+
+footer {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
