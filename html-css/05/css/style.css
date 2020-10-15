@@ -1,5 +1,13 @@
+/* Générique */
+
 * {
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 20px;
 }
 
 a,
@@ -13,28 +21,73 @@ a:hover {
     color: blue;
 }
 
+ul {
+    list-style-type: none;
+}
+
+
+/* Header */
+
 header h1 {
     text-decoration: underline;
     text-align: center;
     font-family: 'Sansita Swashed', cursive;
+    color: blue;
 }
+
+header nav {
+    margin: 20px auto;
+}
+
+header nav ul {
+    text-align: center;
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav li:nth-child(1n+2) {
+    margin-left: 50px;
+}
+
+
+/* Main */
 
 article,
 aside {
     background-color: bisque;
     border-radius: 10px;
     border-left: 5px solid rgb(252, 200, 136);
+    padding: 0 10px;
+}
+
+article:nth-of-type(1n+2),
+aside {
+    margin-top: 50px;
 }
 
 aside {
     border-radius: 10px 20px;
     border-top: 5px solid rgb(252, 200, 136);
+    box-shadow: 5px 5px 10px rgb(252, 200, 136);
 }
+
+article h1,
+aside h1 {
+    color: red;
+    ;
+}
+
+article p,
+aside p {
+    text-align: justify;
+}
+
+
+/* Footer */
 
 footer {
     text-align: center;
-}
-
-ul {
-    list-style-type: none;
+    margin-top: 50px;
 }
