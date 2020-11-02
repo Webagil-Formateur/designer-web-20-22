@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* Header */
+
+header,
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 62px;
+}
+
+header .container {
+    display: flex;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+header .address {
+    margin-left: auto;
+}
+
+
+/* Main */
+
+
+/* Main - Slogan */
+
+.section-slogan {
+    display: flex;
+    height: 100vh;
+    background-image: url(../img/background-slogan.jpg);
+    background-size: cover;
+    /* Parallax */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-slogan .container {
+    text-align: center;
+    color: white;
+}
+
+.section-slogan h1 {
+    font-size: 80px;
+    font-family: 'Anton', sans-serif;
+}
+
+.section-slogan p {
+    font-size: 30px;
+}
+
+
+/* Main - Spécialités */
+
+.section-specialites {
+    min-height: 100vh;
+    display: flex;
+}
+
+.specialites {
+    display: flex;
+}
+
+.specialites figure {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.specialites img {
+    width: 100%;
+    height: 200px;
+}
+
+.specialites figcaption {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.section-specialites h2 {
+    margin-bottom: 80px;
+}
+
+
+/* Footer */
+
+footer .container {
+    text-align: center;
+}
