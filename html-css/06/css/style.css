@@ -5,7 +5,7 @@
 }
 
 .container {
-    width: 960px;
+    width: 1140px;
     margin: auto;
 }
 
@@ -51,7 +51,7 @@ header .address {
 
 .section-slogan {
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 62px);
     background-image: url(../img/background-slogan.jpg);
     background-size: cover;
     /* Parallax */
@@ -111,4 +111,46 @@ header .address {
 
 footer .container {
     text-align: center;
+}
+
+@media (max-width: 1199.98px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        width: 540px;
+    }
+    .section-specialites {
+        padding: 50px 0;
+    }
+    .specialites {
+        flex-direction: column;
+    }
+    .section-specialites h2 {
+        margin: 0;
+    }
+    .specialites figure {
+        width: 70%;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .specialites figure {
+        width: 100%;
+    }
 }

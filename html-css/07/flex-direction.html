@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - flex-direction</title>
+
+    <style>
+        body {
+            padding: 100px;
+        }
+        
+        div {
+            color: white;
+        }
+        
+        .specialites {
+            width: 800px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            height: 500px;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
+        
+        .specialite-1 {
+            width: 800px;
+            background-color: red;
+            order: 10;
+            flex-grow: 1;
+        }
+        
+        .specialite-2 {
+            width: 200px;
+            background-color: blue;
+            display: flex;
+            height: 200px;
+            align-items: flex-end;
+            order: 10;
+            flex-grow: 2;
+            flex-shrink: 1;
+            align-self: flex-end;
+        }
+        
+        .specialite-3 {
+            flex-basis: 200px;
+            background-color: green;
+            order: 10;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="specialites">
+        <div class="specialite-1">1</div>
+        <div class="specialite-2">2</div>
+        <div class="specialite-3">3</div>
+    </div>
+</body>
+
+</html>
