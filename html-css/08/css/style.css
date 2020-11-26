@@ -1,116 +1,245 @@
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Roboto', sans-serif;
-        color: black;
-        box-sizing: content-box;
-    }
-    
-    h1 {
-        font-size: 180px;
-    }
-    
-    h2 {
-        font-size: 36px;
-    }
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 180px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    font-weight: 900;
+}
+
+.container {
+    /* border: 1px solid red; */
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+header {
+    min-height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav li:nth-child(1n+2) {
+    margin-left: 20px;
+}
+
+
+/* Sections */
+
+section {
+    min-height: 80vh;
+}
+
+
+/* Section Titre */
+
+section.titre {
+    background-image: url(../img/background-pains.webp);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+section.titre .container {
+    text-align: center;
+}
+
+
+/* Section Savoir-faire */
+
+.savoir-faire .container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.savoir-faire h2 {
+    margin-bottom: 50px;
+}
+
+.savoir-faire .produits {
+    display: flex;
+}
+
+.savoir-faire figure {
+    margin: 20px;
+}
+
+.savoir-faire figure img {
+    width: 100%;
+}
+
+.savoir-faire figcaption {
+    font-weight: 900;
+}
+
+
+/* Section Illustration farine */
+
+section.illustration-farine {
+    background-image: url(../img/background-farine-eau.webp);
+    background-size: cover;
+}
+
+
+/* Sections a-propos & produits*/
+
+section.a-propos-produits .container {
+    display: flex;
+}
+
+section.a-propos-produits .texte {
+    width: 100%;
+}
+
+section.a-propos-produits .texte>div {
+    margin: 50px;
+}
+
+section.a-propos-produits .texte h2 {
+    font-family: "Pacifico", cursive;
+}
+
+section.a-propos-produits .texte h3 {
+    font-size: 30px;
+}
+
+section.a-propos-produits .texte p {
+    margin-top: 50px;
+    line-height: 150%;
+    text-align: justify;
+}
+
+section.a-propos-produits .image {
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+section.a-propos .image {
+    background-image: url(../img/a-propos.webp);
+}
+
+section.produits .image {
+    background-image: url(../img/produits.webp);
+    background-position: right 50%;
+}
+
+
+/* Footer */
+
+footer {
+    min-height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+
+footer .container {
+    text-align: center;
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
     .container {
-        /* border: 1px solid red; */
-        width: 960px;
-        margin: 0 auto;
+        width: 720px;
     }
-    
-    header {
-        min-height: 80px;
-        background-color: black;
+    h1 {
+        font-size: 140px;
     }
-    
-    section {
-        min-height: 80vh;
+    h2 {
+        font-size: 30px;
     }
-    
-    footer {
-        min-height: 80px;
-        background-color: black;
+    header .container {
+        flex-direction: column-reverse;
     }
-    /* Section Titre */
-    
-    section.titre {
-        background-image: url(../img/background-pains.webp);
-        background-size: cover;
-        display: flex;
-        align-items: center;
+    header nav li {
+        display: block;
+        margin: 20px 0;
     }
-    
-    section.titre .container {
-        text-align: center;
+    header nav li:nth-child(1n+2) {
+        margin-left: 0;
     }
-    /* Section Savoir-faire */
-    
-    .savoir-faire .container {
-        padding-top: 50px;
-        padding-bottom: 100px;
-        text-align: center;
+    header p {
+        margin-top: 20px;
     }
-    
-    .savoir-faire h2 {
-        margin-bottom: 50px;
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .container {
+        width: 540px;
     }
-    
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 20px;
+    }
     .savoir-faire .produits {
-        display: flex;
+        flex-direction: column;
     }
-    
     .savoir-faire figure {
-        margin: 20px;
+        margin: 0 0 50px 0;
     }
-    
-    .savoir-faire figure img {
+    section.a-propos-produits .container {
+        flex-direction: column;
+    }
+    section.a-propos-produits .texte>div {
+        margin: 50px 0;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .container {
         width: 100%;
+        padding: 0 10px;
     }
-    /* Section Illustration farine */
-    
-    section.illustration-farine {
-        background-image: url(../img/background-farine-eau.webp);
-        background-size: cover;
-    }
-    /* Medium devices (tablets, less than 992px) */
-    
-    @media (max-width: 991.98px) {
-        .container {
-            width: 720px;
-        }
-        h1 {
-            font-size: 140px;
-        }
-        h2 {
-            font-size: 30px;
-        }
-    }
-    /* Small devices (landscape phones, less than 768px) */
-    
-    @media (max-width: 767.98px) {
-        .container {
-            width: 540px;
-        }
-        h1 {
-            font-size: 80px;
-        }
-        h2 {
-            font-size: 20px;
-        }
-        .savoir-faire .produits {
-            flex-direction: column;
-        }
-        .savoir-faire figure {
-            margin: 0 0 50px 0;
-        }
-    }
-    /* Extra small devices (portrait phones, less than 576px) */
-    
-    @media (max-width: 575.98px) {
-        .container {
-            width: 100%;
-            padding: 0 10px;
-        }
-    }
+}
