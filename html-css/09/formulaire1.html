@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire 1</title>
+</head>
+
+<body>
+
+    <form method="GET" action="">
+
+        <fieldset>
+            <legend>Connexion</legend>
+            <div>
+                <input type="email" name="email" id="form-email" value="" placeholder="Votre email" autofocus required>
+                <label for="form-email">Saisissez votre e-mail</label>
+            </div>
+            <div>
+                <input type="password" name="password" id="form-password" placeholder="Votre mot de passe" required>
+                <label for="form-password">Saisissez votre mot de passe</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Options</legend>
+            <div>
+                <label>
+                    <input type="checkbox" name="always" value="true">
+                    Resté connecté
+                </label>
+            </div>
+        </fieldset>
+
+
+
+        <div>
+            <input type="submit" name="envoyer" id="form-submit" value="Soumettre le formulaire">
+
+            <button>Envoyer</button>
+
+            <input type="reset" value="Effacer le formulaire">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

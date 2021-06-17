@@ -173,10 +173,46 @@ footer {
     display: flex;
     align-items: center;
     color: grey;
+    padding: 20px 10px;
 }
 
 footer .container {
     text-align: center;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer div {
+    margin-top: 20px;
+    width: 100%;
+}
+
+footer .form-newsletter {
+    display: flex;
+}
+
+footer input {
+    width: 100%;
+    height: 30px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+footer input[type="email"] {
+    border-bottom: 1px solid white;
+}
+
+footer input[type=submit] {
+    width: 100px;
+    color: burlywood;
+    cursor: grab;
+}
+
+footer p {
+    margin-top: 40px;
 }
 
 
@@ -231,6 +267,9 @@ footer .container {
     }
     section.a-propos-produits .texte>div {
         margin: 50px 0;
+    }
+    footer .form-newsletter {
+        flex-direction: column;
     }
 }
 

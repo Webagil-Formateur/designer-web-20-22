@@ -1,0 +1,132 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    /* border: 1px solid red; */
+    width: 80vw;
+    height: 80vh;
+    margin: auto 10vh;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fond-elipse {
+    position: absolute;
+    width: 120vw;
+    height: 180vh;
+    background-color: #E71626;
+    border-radius: 50%;
+    top: -120vh;
+    right: -60vw;
+    z-index: -1;
+}
+
+.fond-pere-noel {
+    position: absolute;
+    width: 60vw;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+/* Header  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 20vw;
+}
+
+header ul {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+header li {
+    list-style: none;
+    font-size: 0.3 vw;
+    font-weight: 700;
+}
+
+
+/* Main */
+
+main h1 {
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+main p {
+    width: 40vw;
+}
+
+
+/* Footer */
+
+footer nav {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav img {
+    width: 40px;
+}
+
+@media (max-width: 767.98px) {
+    .fond-elipse {
+        width: 300vw;
+        right: -100vw;
+    }
+    .fond-pere-noel {
+        width: 100vw;
+    }
+    body {
+        padding-bottom: 350px;
+    }
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+    header .logo {
+        width: 80vw;
+        padding-top: 20px;
+    }
+    header ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    header li {
+        margin: 20px auto;
+        font-size: 20px;
+    }
+    main h1 {
+        font-size: 35px;
+    }
+    main p {
+        width: 80vw;
+    }
+}

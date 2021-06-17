@@ -1,0 +1,34 @@
+$primary-color: grey
+$secondary-color: red
+
+$media-tablets: 768px
+
+@mixin element-border
+    box-shadow: 8px 8px 12px $primary-color
+    margin: 15px
+
+%round-border
+    border-radius: 0 0 20px 0
+
+body
+    color: $primary-color
+
+section
+    @include element-border
+    padding: 20px
+    @extend %round-border
+
+img
+    width: 100%
+    @include element-border
+    @extend %round-border
+
+h2
+    color: $secondary-color
+
+// Medium devices (tablets, PC and up)
+@media (min-width: $media-tablets)
+    section
+        display: flex
+    section:nth-child(2)
+        flex-direction: row-reverse

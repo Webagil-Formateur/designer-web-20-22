@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #111111;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+#presentation {
+  background-color: #f1c50e;
+}
+
+#presentation .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 300px;
+  padding: 50px;
+  text-align: center;
+}
+
+#presentation .text h1 {
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+#presentation .text p {
+  font-weight: bold;
+  line-height: 25px;
+}
+
+#presentation .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 400px;
+}
+
+#presentation .img img {
+  height: 100%;
+}
+
+#rubriques {
+  color: #ffffff;
+}
+
+#rubriques a {
+  color: #ffffff;
+}
+
+#rubriques svg {
+  width: 50px;
+}
+
+#rubriques h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#rubriques h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+#rubriques p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+#rubriques article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+#rubriques article:nth-child(1) {
+  background-color: #ee1b24;
+}
+
+#rubriques article:nth-child(2) {
+  background-color: #f1c50e;
+  color: #111111;
+}
+
+#rubriques article:nth-child(2) a {
+  color: #111111;
+}
+
+#rubriques article:nth-child(3) {
+  background-color: #292D35;
+}
+
+#rubriques article:nth-child(4) {
+  background-color: #555c66;
+}
+
+#mike {
+  background-color: #ee1b24;
+  color: #ffffff;
+}
+
+#mike .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+#mike .container img {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 25px;
+}
+
+#mike .container h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+#mike .container blockquote {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #presentation .text {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    text-align: left;
+  }
+  #presentation .img {
+    margin-top: 50px;
+  }
+  #rubriques {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #rubriques article {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    text-align: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+  #rubriques article {
+    width: 25%;
+  }
+}

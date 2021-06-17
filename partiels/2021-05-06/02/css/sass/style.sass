@@ -1,0 +1,86 @@
+$color1: #f2eae1
+$color2: #585c62
+$color3: white
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: 'Open Sans', sans-serif
+    color: $color2
+
+h1, h2, h3
+    font-family: 'Roboto Condensed', sans-serif
+
+.row
+    display: flex
+    flex-wrap: wrap
+
+.left
+    flex-direction: row-reverse
+    justify-content: flex-end
+
+.right
+    justify-content: flex-end
+
+.bloc1
+    width: calc(100% - 10px)
+    margin: 5px
+    aspect-ratio: 1/1
+
+.bloc2
+    width: 100%
+    aspect-ratio: 2/1
+
+.style1
+    background-color: $color1
+
+.style2
+    border: 10px solid $color1
+
+.middle
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    justify-content: space-around
+    padding: 10px
+
+#illustration-restau-1
+    background: rgba(0,0,0,0) url(../img/restaurant1.jpg) no-repeat scroll center center/cover;
+    
+#illustration-restau-2
+    background: rgba(0,0,0,0) url(../img/restaurant2.jpg) no-repeat scroll center center/cover;
+    color: $color3
+    font-size: 3rem
+
+#plat1
+    background: rgba(0,0,0,0) url(../img/plat1.jpg) no-repeat scroll center center/cover;
+
+#plat2
+    background: rgba(0,0,0,0) url(../img/plat2.jpg) no-repeat scroll center center/cover;
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+
+    .container
+        width: 720px
+        margin: 0 auto
+
+    .bloc1
+        width: calc(50% - 10px)
+
+    .bloc2
+        width: 50%
+        aspect-ratio: 1/1
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px)
+
+    .container
+        width: 960px

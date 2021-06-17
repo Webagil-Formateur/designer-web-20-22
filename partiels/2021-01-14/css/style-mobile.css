@@ -1,0 +1,38 @@
+/* Responsive Mobile */
+
+@media (max-width: 575.98px) {
+    .container {
+        width: 94%;
+        padding: 0 3%;
+    }
+    header,
+    #a-propos {
+        flex-direction: column;
+    }
+    header nav {
+        margin-top: 40px;
+    }
+    .yohann {
+        order: -1;
+    }
+    h1 {
+        font-size: 50px;
+        margin: 20px 0;
+    }
+    #realisations .gallerie {
+        flex-direction: column;
+    }
+    #realisations .gallerie>img {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 25px;
+    }
+    #contact {
+        padding: 20px;
+    }
+    input,
+    textarea {
+        box-sizing: border-box;
+        width: 100%;
+    }
+}

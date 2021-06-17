@@ -1,0 +1,152 @@
+$color1: #ee1b24
+$color2: #f1c50e
+$color3: #292D35
+$color4: #555c66
+$text-color-dark: #111111
+$text-color-light: #ffffff
+
+@mixin align-center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+
+@mixin align-left
+    align-items: start
+    text-align: left
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: 'Open Sans', sans-serif
+    font-size: 12px
+    color: $text-color-dark
+
+h1, h2, h3, h4, h5
+    font-family: 'Roboto', sans-serif
+
+.container
+    margin: 0 auto
+
+
+#presentation
+    background-color: $color2
+
+    .text
+        @include align-center
+        min-height: 300px
+        padding: 50px
+        text-align: center
+        
+        h1
+            margin-bottom: 25px
+            font-size: 25px
+
+        p
+            font-weight: bold
+            line-height: 25px
+
+    .img
+        @include align-center
+        height: 400px
+        img
+            height: 100%
+
+#rubriques
+    color: $text-color-light
+
+    a
+        color: $text-color-light
+
+    svg
+        width: 50px
+
+    h2
+        font-size: 50px
+        margin-bottom: 20px
+
+    h3
+        font-size: 20px
+        font-weight: 400
+        margin-bottom: 20px
+
+    p
+        font-size: 15px
+        margin-bottom: 20px
+
+    article
+        @include align-center
+        padding: 25px 15px
+
+    article:nth-child(1)
+        background-color: $color1
+
+    article:nth-child(2)
+        background-color: $color2
+        color: $text-color-dark
+        a
+            color: $text-color-dark
+
+    article:nth-child(3)
+        background-color: $color3
+
+    article:nth-child(4)
+        background-color: $color4
+
+
+#mike
+    background-color: $color1
+    color: $text-color-light
+
+    .container
+        @include align-center
+        padding: 50px
+
+        img
+            width: 100%
+            max-width: 400px
+            margin-bottom: 25px
+
+        h2
+            font-size: 40px
+            margin-bottom: 25px
+
+        blockquote
+            font-size: 15px
+            font-weight: bold
+            line-height: 25px
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+    .container
+        width: 720px
+        display: flex
+
+    #presentation
+        .text
+            @include align-left
+
+        .img
+            margin-top: 50px
+
+    #rubriques
+        display: flex
+        flex-wrap: wrap
+
+        article
+            @include align-left
+            width: 50%
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px)
+    .container
+        width: 960px
+
+    #rubriques
+        article
+            width: 25%
